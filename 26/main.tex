@@ -1,4 +1,4 @@
-\iffalse
+
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -71,9 +71,9 @@ unit step sequence. 	\label{option:GATE.2023.BM.26.1}
 \end{enumerate}
 
 \noindent \textbf{Ans.}\\
-\fi
+
 \begin{table}[h]
-\input{gate-signal/2023/BM/26/tables/tab1.tex}
+\input{tables/tab1.tex}
 \end{table}
 \begin{align}
 y[n] = 0.5y[n-1] + x[n] 
@@ -93,14 +93,19 @@ Taking inverse $Z$-Transform
 \begin{align}
 y[n] = h[n] = 0.5^{n}u[n]
 \end{align}
-Hence \ref{option:GATE.2023.BM.26.1} is wrong,\\
-
-$y[n]$ is a non-zero infinite G.P. hence \ref{option:GATE.2023.BM.26.3} holds true and \ref{option:GATE.2023.BM.26.4} is false
-
+Hence 
+\begin{itemize}
+	\item	\ref{option:GATE.2023.BM.26.1} is wrong\\
+\end{itemize}
+$y[n]$ is a non-zero infinite G.P. hence 
+\begin{itemize}
+	\item	\ref{option:GATE.2023.BM.26.3} holds true and 
+	\item   \ref{option:GATE.2023.BM.26.4} is false
+\end{itemize}
 \pagebreak
 Plotting $y[n]$ vs $n$
 \begin{figure}[h]
-    \includegraphics[width=0.5\textwidth]{gate-signal/2023/BM/26/figs/fig1.png}
+    \includegraphics[width=0.5\textwidth]{figs/fig1.png}
     \caption{Plot of $y[n]$ vs $n$}
     \label{fig:GATE.2023.BM.26.1}
 \end{figure}
@@ -116,7 +121,10 @@ It's a infinite G.P. with a = 1 , r = 0.5
 \sum^{+\infty}_{n = -\infty}\abs{\:0.5^nu[n]\:} &= \frac{a}{1 -r} \\
 &= \frac{1}{1 - 0.5} = 2
 \end{align}
-As it is a finite value it is BIBO stable so \ref{option:GATE.2023.BM.26.2} holds true.
+As it is a finite value it is BIBO stable so 
+\begin{itemize}
+	\item \ref{option:GATE.2023.BM.26.2} holds true.
+\end{itemize}
 
 
 
@@ -125,5 +133,4 @@ As it is a finite value it is BIBO stable so \ref{option:GATE.2023.BM.26.2} hold
 
 
 
-
-%\end{document}
+\end{document}
