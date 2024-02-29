@@ -12,7 +12,7 @@ y_values = np.where(n_values == 0, 1, 0.5**n_values)
 plt.stem(n_values, y_values, linefmt='b-', markerfmt='bo', basefmt='b-', label='Stem Plot')
 
 plt.xlabel('n')
-plt.ylabel('y[n]')
+plt.ylabel('h[n]')
 plt.grid(True)
 plt.legend()
 
